@@ -1,0 +1,125 @@
+@media (min-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+}
+
+.text-brand { color: #25B0E5; }
+.text-gray {color : #555;margin-top:5px; }
+
+/* http://www.mademyday.de/css-height-equals-width-with-pure-css.html */
+.box{
+  position: relative;
+  /*width: 50%;*/   /* desired width */
+}
+.box:before{
+  content: "";
+  display: block;
+  padding-top: 100%;  /* initial ratio of 1:1*/
+}
+.content{
+  position:  absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.ratio2_1:before{
+  padding-top: 50%;
+}
+.ratio1_2:before{
+  padding-top: 200%;
+}
+.ratio4_3:before{
+  padding-top: 75%;
+}
+.ratio16_9:before{
+  padding-top: 56.25%;
+}
+
+header .navbar {
+  background-color: transparent;
+  /*border-color: transparent;*/
+  border-radius: 0;
+  background-image: url(../images/rainbow-1a-f.jpg);
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 10px;
+}
+
+/*header .navbar .container {
+  background-image: url(../img/rainbow-1a-f.jpg);
+  background-position: center center;
+  background-size: cover;
+}*/
+
+header .navbar-brand {
+  color: #25B0E5 !important; font-weight: 100; font-size: 40px;
+  height: auto;
+  padding: 25px 15px;
+}
+
+@media (min-width: 768px) {
+  header .navbar-nav>li>a {
+    padding-top: 35px;
+    padding-bottom: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  header .navbar-nav>li>a {
+    padding-top: 35px;
+    padding-bottom: 15px;
+  }
+}
+
+header .navbar-toggle {
+  padding: 18px 10px;
+}
+
+
+.search-bar .form-control { /* stop the glowing blue shadow */
+ box-shadow: none;
+ -webkit-box-shadow: none;
+ /*border: none;*/
+ /*border-bottom: dashed 1px #ccc;*/
+ border-color: #ccc;
+}
+.search-bar .input-group-addon {
+  /*background-color: transparent;*/
+  /*border: none;*/
+}
+
+ul.product-side-list>li>a {
+  padding: 10px 8px;
+}
+ul.product-side-list>li.active>a, ul.product-side-list>li.active>a:hover, ul.product-side-list>li.active>a:focus {
+color: #fff;
+background-color: #F69E64;
+}
+
+footer {
+  background-image: url(../images/rainbow-1a-ff.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+footer ul.footer-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer ul.footer-links li { padding: 2px 0px; }
+
+body{
+  background-color: red;
+}
+.heading1 {
+    padding-bottom: 20px;
+}
+
+/*hide search form*/
+#search-form > div {
+    display: none;
+}
+
